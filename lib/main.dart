@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examples/menu_drag/menu_drag.dart';
 import 'package:flutter_examples/shoes_store/shoes_store_page.dart';
 import 'package:flutter_examples/boats_store/ui/boat_list_page.dart';
 import 'package:flutter_examples/coffee_shop/ui/coffee_home_page.dart';
+import 'package:flutter_examples/sports_store/sports_store_page.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -58,22 +60,22 @@ class MyAppState extends State<MyApp> {
                 );
               },
             ),
-            // MyMenuButton(
-            //   title: "Hero Animations",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       MainHeroAnimationsPage(),
-            //     );
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Size and Positions",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       MainSizeAndPosition(),
-            //     );
-            //   },
-            // ),
+            MyMenuButton(
+              title: "Sports Store",
+              actionTap: () {
+                onButtonTap(
+                  SportsStorePage(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Menu drag animation",
+              actionTap: () {
+                onButtonTap(
+                  MenuDrag(),
+                );
+              },
+            ),
             // MyMenuButton(
             //   title: "ScrollController and ScrollNotification",
             //   actionTap: () {
