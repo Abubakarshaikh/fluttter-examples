@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examples/android_messages/android_messages_page.dart';
+import 'package:flutter_examples/collapsing_toolbar/main_collapsing_toolbar.dart';
+import 'package:flutter_examples/credit_cards_concept/credit_cards_concept_page.dart';
+import 'package:flutter_examples/custom_sliverheader/custom_sliver_header.dart';
 import 'package:flutter_examples/menu_drag/menu_drag.dart';
+import 'package:flutter_examples/persistent_tabbar/main_persistent_tabbar.dart';
 import 'package:flutter_examples/shoes_store/shoes_store_page.dart';
 import 'package:flutter_examples/boats_store/ui/boat_list_page.dart';
 import 'package:flutter_examples/coffee_shop/ui/coffee_home_page.dart';
 import 'package:flutter_examples/sports_store/sports_store_page.dart';
+import 'package:flutter_examples/twitter_profile/twitter_profile_page.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -76,54 +82,60 @@ class MyAppState extends State<MyApp> {
                 );
               },
             ),
+            MyMenuButton(
+              title: "Android Messages Page",
+              actionTap: () {
+                onButtonTap(
+                  AndroidMessagesPage(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Persistent TabBar  ",
+              actionTap: () {
+                onButtonTap(
+                  MainPersistentTabBar(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Collapsing Toolbar",
+              actionTap: () {
+                onButtonTap(
+                  MainCollapsingToolbar(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Twitter Profile Page",
+              actionTap: () {
+                onButtonTap(
+                  TwitterProfilePage(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Custom Sliver Header",
+              actionTap: () {
+                onButtonTap(
+                  CustomSliverHeader(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "CreditCard Concept Page",
+              actionTap: () {
+                onButtonTap(
+                  CreditCardConceptPage(),
+                );
+              },
+            ),
             // MyMenuButton(
-            //   title: "ScrollController and ScrollNotification",
+            //   title: "AlbumFlowPage",
             //   actionTap: () {
             //     onButtonTap(
-            //       MainScrollController(),
+            //       AlbumFlowPage(),
             //     );
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Apps Clone",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       MainAppsClone(),
-            //     );
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Animations",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       MainAnimations(),
-            //     );
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Communication Widgets",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       MainCommunicationWidgets(),
-            //     );
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Split Image",
-            //   actionTap: () {
-            //     onButtonTap(MainSplitImage());
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Custom AppBar & SliverAppBar",
-            //   actionTap: () {
-            //     onButtonTap(MainAppBarSliverAppBar());
-            //   },
-            // ),
-            // MyMenuButton(
-            //   title: "Menu Navigations",
-            //   actionTap: () {
-            //     onButtonTap(MainMenuNavigations());
             //   },
             // ),
           ],
