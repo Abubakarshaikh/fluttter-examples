@@ -10,6 +10,8 @@ import 'package:flutter_examples/boats_store/ui/boat_list_page.dart';
 import 'package:flutter_examples/coffee_shop/ui/coffee_home_page.dart';
 import 'package:flutter_examples/sports_store/sports_store_page.dart';
 import 'package:flutter_examples/twitter_profile/twitter_profile_page.dart';
+import 'photo_concept/photo_concept_page.dart';
+import 'circular_list/circular_list_page.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -130,14 +132,22 @@ class MyAppState extends State<MyApp> {
                 );
               },
             ),
-            // MyMenuButton(
-            //   title: "AlbumFlowPage",
-            //   actionTap: () {
-            //     onButtonTap(
-            //       AlbumFlowPage(),
-            //     );
-            //   },
-            // ),
+            MyMenuButton(
+              title: "Photo Concept Page",
+              actionTap: () {
+                onButtonTap(
+                  PhotoConceptPage(),
+                );
+              },
+            ),
+            MyMenuButton(
+              title: "Circular List Page",
+              actionTap: () {
+                onButtonTap(
+                  CircularListPage(),
+                );
+              },
+            ),
           ],
         ),
       ),
